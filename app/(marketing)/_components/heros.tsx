@@ -9,14 +9,16 @@ export const Heros = () => {
             src="/documents.png"
             alt="Documents"
             fill
-            className="object-contain dark:hidden"
+            className="object-contain dark:hidden select-none"
+            draggable={false}
           />
 
           <Image
             src="/documents-dark.png"
             alt="Documents"
             fill
-            className="object-contain hidden dark:block"
+            className="object-contain hidden dark:block select-none"
+            draggable={false}
           />
         </div>
 
@@ -25,13 +27,15 @@ export const Heros = () => {
             src="/reading.png"
             alt="Reading"
             fill
-            className="object-contain dark:hidden"
+            className="object-contain dark:hidden select-none"
+            draggable={false}
           />
           <Image
             src="/reading-dark.png"
             alt="Reading"
             fill
-            className="object-contain hidden dark:block"
+            className="object-contain hidden dark:block select-none"
+            draggable={false}
           />
         </div>
       </div>
