@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { type PropsWithChildren } from "react";
+import { Toaster } from "sonner";
 
 import { ConvexClientProvider } from "@/components/providers/convex-provider";
 import { ThemeProvider } from "@/components/providers/theme-provider";
@@ -39,6 +40,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
           disableTransitionOnChange
           storageKey="jotion-theme"
         >
+          <Toaster position="bottom-center" />
           <ConvexClientProvider>{children}</ConvexClientProvider>
         </ThemeProvider>
       </body>
