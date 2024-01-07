@@ -31,7 +31,7 @@ export const Heading = () => {
       {isAuthenticated && !isLoading && (
         <Button asChild>
           <Link href="/documents">
-            Enter Join
+            Enter Jotion
             <ArrowRight className="h-4 w-4 ml-2" />
           </Link>
         </Button>
