@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { type PropsWithChildren } from "react";
-import { Toaster } from "sonner";
 
 import { ConvexClientProvider } from "@/components/providers/convex-provider";
 import { ModalProvider } from "@/components/providers/modal-provider";
 import { ThemeProvider } from "@/components/providers/theme-provider";
+import { EdgeStoreProvider } from "@/lib/edgestore";
 
 import "./globals.css";
 import { ToasterProvider } from "@/components/providers/toaster-provider";
@@ -44,7 +44,9 @@ const RootLayout = ({ children }: PropsWithChildren) => {
         >
           <ToasterProvider />
           <ModalProvider />
-          <ConvexClientProvider>{children}</ConvexClientProvider>
+          <ConvexClientProvider>
+            <EdgeStoreProvider>{children}</EdgeStoreProvider>
+          </ConvexClientProvider>
         </ThemeProvider>
       </body>
     </html>
