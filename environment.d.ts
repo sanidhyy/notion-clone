@@ -9,6 +9,10 @@ declare global {
 
       // clerk auth keys
       NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: string;
+
+      // edge store keys
+      EDGE_STORE_ACCESS_KEY: string;
+      EDGE_STORE_SECRET_KEY: string;
     }
   }
 }
