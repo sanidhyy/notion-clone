@@ -1,10 +1,15 @@
 "use client";
 
+import { useMutation } from "convex/react";
+import { ImageIcon, Smile, X } from "lucide-react";
+import React, { type ElementRef, useRef, useState } from "react";
+import TextareaAutoSize from "react-textarea-autosize";
+
 import { Button } from "@/components/ui/button";
+import { api } from "@/convex/_generated/api";
 import type { Doc } from "@/convex/_generated/dataModel";
 
 import { IconPicker } from "./icon-picker";
-import { ImageIcon, Smile, X } from "lucide-react";
 
 type ToolbarProps = {
   initialData: Doc<"documents">;
@@ -12,6 +17,40 @@ type ToolbarProps = {
 };
 
 export const Toolbar = ({ initialData, preview }: ToolbarProps) => {
+  const inputRef = useRef<ElementRef<"textarea">>(null);
+  const [isEditing, setIsEditing] = useState(false);
+  const [value, setValue] = useState(initialData.title);
+
+  const update = useMutation(api.documents.update);
+
+  const enableInput = () => {
+    if (preview) return;
+
+    setIsEditing(true);
+
+    setTimeout(() => {
+      setValue(initialData.title);
+      inputRef.current?.focus();
+    }, 0);
+  };
+
+  const disableInput = () => setIsEditing(false);
+
+  const onInput = (value: string) => {
+    setValue(value);
+    update({
+      id: initialData._id,
+      title: value || "Untitled",
+    });
+  };
+
+  const onKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      disableInput();
+    }
+  };
+
   return (
     <div className="pl-[54px] group relative">
       {!!initialData.icon && !preview && (
@@ -62,6 +101,25 @@ export const Toolbar = ({ initialData, preview }: ToolbarProps) => {
           </Button>
         )}
       </div>
+
+      {isEditing && !preview ? (
+        <TextareaAutoSize
+          ref={inputRef}
+          onBlur={disableInput}
+          onKeyDown={onKeyDown}
+          value={value}
+          onChange={(e) => onInput(e.target.value)}
+          className="text-5xl bg-transparent font-bold break-words outline-none text-[#3F3F3F] dark:text-[#CFCFCF] resize-none"
+        />
+      ) : (
+        <div
+          role="button"
+          onClick={enableInput}
+          className="pb-[11.5px] text-5xl font-bold break-words outline-none text-[#3F3F3F] dark:text-[#CFCFCF]"
+        >
+          {initialData.title}
+        </div>
+      )}
     </div>
   );
 };
