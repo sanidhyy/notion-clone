@@ -51,7 +51,7 @@ export const Navbar = ({ isCollapsed, onResetWidth }: NavbarProps) => {
           <Title initialData={document} />
 
           <div className="flex items-center gap-x-2">
-            <Menu documentId={document._id} />
+            <Menu documentId={document._id} isArchived={document.isArchived} />
           </div>
         </div>
       </nav>

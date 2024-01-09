@@ -20,12 +20,14 @@ import type { Id } from "@/convex/_generated/dataModel";
 
 type MenuProps = {
   documentId: Id<"documents">;
+  isArchived: boolean;
 };
 
-export const Menu = ({ documentId }: MenuProps) => {
+export const Menu = ({ documentId, isArchived }: MenuProps) => {
   const router = useRouter();
   const { user } = useUser();
   const archive = useMutation(api.documents.archive);
+  const remove = useMutation(api.documents.remove);
 
   const onArchive = () => {
     const promise = archive({ id: documentId });
@@ -34,6 +36,18 @@ export const Menu = ({ documentId }: MenuProps) => {
       loading: "Moving to trash...",
       success: "Note moved to trash.",
       error: "Failed to archive note.",
+    });
+
+    router.push("/documents");
+  };
+
+  const onRemove = () => {
+    const promise = remove({ id: documentId });
+
+    toast.promise(promise, {
+      loading: "Deleting note...",
+      success: "Note deleted.",
+      error: "Failed to delete note.",
     });
 
     router.push("/documents");
@@ -53,9 +67,9 @@ export const Menu = ({ documentId }: MenuProps) => {
         alignOffset={8}
         forceMount
       >
-        <DropdownMenuItem onClick={onArchive}>
+        <DropdownMenuItem onClick={isArchived ? onRemove : onArchive}>
           <Trash className="h-4 w-4 mr-2" />
-          Delete
+          {isArchived ? "Delete forever" : "Move to trash"}
         </DropdownMenuItem>
         <DropdownMenuSeparator />
         <div className="text-xs text-muted-foreground p-2">
