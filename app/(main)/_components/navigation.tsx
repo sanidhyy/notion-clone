@@ -25,6 +25,7 @@ import { cn } from "@/lib/utils";
 
 import { DocumentList } from "./document-list";
 import { Item } from "./item";
+import { TrashBox } from "./trash-box";
 import { UserItem } from "./user-item";
 
 export const Navigation = () => {
@@ -158,7 +159,7 @@ export const Navigation = () => {
               side={isMobile ? "bottom" : "right"}
               className="p-0 w-72"
             >
-              <p>Trash box</p>
+              <TrashBox />
             </PopoverContent>
           </Popover>
         </div>
