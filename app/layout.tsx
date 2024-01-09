@@ -8,6 +8,7 @@ import { ModalProvider } from "@/components/providers/modal-provider";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 
 import "./globals.css";
+import { ToasterProvider } from "@/components/providers/toaster-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,7 +42,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
           disableTransitionOnChange
           storageKey="jotion-theme"
         >
-          <Toaster position="bottom-center" />
+          <ToasterProvider />
           <ModalProvider />
           <ConvexClientProvider>{children}</ConvexClientProvider>
         </ThemeProvider>
