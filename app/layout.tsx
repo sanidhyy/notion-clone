@@ -42,10 +42,12 @@ const RootLayout = ({ children }: PropsWithChildren) => {
           disableTransitionOnChange
           storageKey="jotion-theme"
         >
-          <ToasterProvider />
-          <ModalProvider />
           <ConvexClientProvider>
-            <EdgeStoreProvider>{children}</EdgeStoreProvider>
+            <EdgeStoreProvider>
+              <ToasterProvider />
+              <ModalProvider />
+              {children}
+            </EdgeStoreProvider>
           </ConvexClientProvider>
         </ThemeProvider>
       </body>
