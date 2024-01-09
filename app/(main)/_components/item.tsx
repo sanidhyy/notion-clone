@@ -99,8 +99,7 @@ export const Item = ({
   const ChevronIcon = expanded ? ChevronDown : ChevronRight;
 
   return (
-    <div
-      role="button"
+    <button
       onClick={onClick}
       style={{
         paddingLeft: level ? `${level * 12 + 12}px` : "12px",
@@ -172,7 +171,7 @@ export const Item = ({
           </div>
         </div>
       )}
-    </div>
+    </button>
   );
 };
 

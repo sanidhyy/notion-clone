@@ -136,16 +136,15 @@ export const Navigation = () => {
           isMobile && "w-0"
         )}
       >
-        <div
+        <button
           onClick={collapse}
-          role="button"
           className={cn(
             "h-6 w-6 text-muted-foreground rounded-sm hover:bg-neutral-300 dark:hover:bg-neutral-600 absolute top-3 right-2 opacity-0 group-hover/sidebar:opacity-100 transition",
             isMobile && "opacity-100"
           )}
         >
           <ChevronsLeft className="h-6 w-6" />
-        </div>
+        </button>
         <div>
           <UserItem />
           <Item label="Search" icon={Search} isSearch onClick={search.onOpen} />
@@ -190,11 +189,9 @@ export const Navigation = () => {
         ) : (
           <nav className="bg-transparent px-3 py-2 w-full">
             {isCollapsed && (
-              <Menu
-                onClick={resetWidth}
-                role="button"
-                className="h-6 w-6 text-muted-foreground"
-              />
+              <button onClick={resetWidth}>
+                <Menu role="button" className="h-6 w-6 text-muted-foreground" />
+              </button>
             )}
           </nav>
         )}
