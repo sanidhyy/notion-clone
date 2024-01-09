@@ -34,8 +34,8 @@ type ItemProps = {
   isSearch?: boolean;
   level?: number;
   onExpand?: () => void;
+  onClick?: () => void;
   label: string;
-  onClick: () => void;
   icon: LucideIcon;
 };
 
