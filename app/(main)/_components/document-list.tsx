@@ -1,6 +1,7 @@
 "use client";
 
 import { useQuery } from "convex/react";
+import { FileIcon } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 import { useState } from "react";
 
@@ -9,7 +10,6 @@ import type { Doc, Id } from "@/convex/_generated/dataModel";
 
 import { Item } from "./item";
 import { cn } from "@/lib/utils";
-import { FileIcon } from "lucide-react";
 
 type DocumentListProps = {
   parentDocumentId?: Id<"documents">;
