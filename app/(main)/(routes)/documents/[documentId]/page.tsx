@@ -49,14 +49,18 @@ const DocumentIdPage = ({ params }: DocumentIdPageProps) => {
       </div>
     );
 
-  if (document === null) return <div>Not found.</div>;
+  if (document === null) return <p>Not found.</p>;
 
   return (
     <div className="pb-40">
-      <Cover url={document.coverImage} />
+      <Cover preview={document.isArchived} url={document.coverImage} />
       <div className="md:max-w-3xl lg:max-w-3xl mx-auto">
-        <Toolbar initialData={document} />
-        <Editor onChange={onChange} initialContent={document.content} />
+        <Toolbar preview={document.isArchived} initialData={document} />
+        <Editor
+          editable={!document.isArchived}
+          onChange={onChange}
+          initialContent={document.content}
+        />
       </div>
     </div>
   );

@@ -21,6 +21,8 @@ export const Title = ({ initialData }: TitleProps) => {
   const update = useMutation(api.documents.update);
 
   const enableInput = () => {
+    if (initialData.isArchived) return;
+
     setTitle(initialData.title);
     setIsEditing(true);
 
