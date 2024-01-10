@@ -35,7 +35,7 @@ export const siteConfig: Metadata = {
     "zustand",
     "zod",
     "sql",
-    "postreql",
+    "postgresql",
     "aiven",
     "lucide-react",
     "next-themes",
