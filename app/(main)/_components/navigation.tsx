@@ -3,6 +3,7 @@
 import { useMutation } from "convex/react";
 import {
   ChevronsLeft,
+  Github,
   Menu,
   Plus,
   PlusCircle,
@@ -30,6 +31,7 @@ import { Item } from "./item";
 import { Navbar } from "./navbar";
 import { TrashBox } from "./trash-box";
 import { UserItem } from "./user-item";
+import { links } from "@/config";
 
 export const Navigation = () => {
   const settings = useSettings();
@@ -148,29 +150,55 @@ export const Navigation = () => {
         >
           <ChevronsLeft className="h-6 w-6" />
         </button>
-        <div>
-          <UserItem />
-          <Item label="Search" icon={Search} isSearch onClick={search.onOpen} />
-          <Item label="Settings" icon={Settings} onClick={settings.onOpen} />
-          <Item onClick={handleCreate} label="New page" icon={PlusCircle} />
-        </div>
-        <div className="mt-4">
-          <DocumentList />
-          <Item onClick={handleCreate} icon={Plus} label="Add a page" />
 
-          <Popover>
-            <PopoverTrigger className="w-full mt-4">
-              <Item label="Trash" icon={Trash} />
-            </PopoverTrigger>
+        <div className="h-full flex flex-col justify-between">
+          <div>
+            <div>
+              <UserItem />
+              <Item
+                label="Search"
+                icon={Search}
+                isSearch
+                onClick={search.onOpen}
+              />
+              <Item
+                label="Settings"
+                icon={Settings}
+                onClick={settings.onOpen}
+              />
+              <Item onClick={handleCreate} label="New page" icon={PlusCircle} />
+            </div>
+            <div className="mt-4">
+              <DocumentList />
+              <Item onClick={handleCreate} icon={Plus} label="Add a page" />
 
-            <PopoverContent
-              side={isMobile ? "bottom" : "right"}
-              className="p-0 w-72"
-            >
-              <TrashBox />
-            </PopoverContent>
-          </Popover>
+              <Popover>
+                <PopoverTrigger className="w-full mt-4">
+                  <Item label="Trash" icon={Trash} />
+                </PopoverTrigger>
+
+                <PopoverContent
+                  side={isMobile ? "bottom" : "right"}
+                  className="p-0 w-72"
+                >
+                  <TrashBox />
+                </PopoverContent>
+              </Popover>
+            </div>
+          </div>
+
+          <div className="mb-4">
+            <Item
+              onClick={() =>
+                window.open(links.sourceCode, "_blank", "noopener,noreferrer")
+              }
+              icon={Github}
+              label="Source Code"
+            />
+          </div>
         </div>
+
+        {/* adjust sidebar */}
         <div
           onMouseDown={handleMouseDown}
           onClick={resetWidth}
