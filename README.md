@@ -79,8 +79,10 @@ notion-clone/
     |-- index.ts
   |- convex/
     |-- _generated/
+    |-- .env.example
     |-- auth.config.js
     |-- documents.ts
+    |-- environment.d.ts
     |-- schema.ts
     |-- tsconfig.json
   |- hooks/
