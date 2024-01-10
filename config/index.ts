@@ -59,5 +59,5 @@ export const siteConfig: Metadata = {
 } as const;
 
 export const links = {
-  sourceCode: "https://github.com/sanidhyy/learnhub",
+  sourceCode: "https://github.com/sanidhyy/notion-clone",
 } as const;
