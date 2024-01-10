@@ -139,14 +139,14 @@ EDGE_STORE_SECRET_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 5. Contents of `convex/.env.local`:
 
-```
+```env
 # convex/.env.local
 
 # clerk issuer url (go to your clerk dashboard > JWT Templates > New template > Convex > Save and copy your Issuer URL)
 CLERK_ISSUER_URL=<your-clerk-issuer-url>
 ```
 
-6. #### Convex Deployment
+6. Convex Deployment
 
 - Visit the Convex website: [https://convex.dev](https://convex.dev)
 - Log in to your Convex account or sign up if you don't have one.
@@ -156,7 +156,7 @@ CLERK_ISSUER_URL=<your-clerk-issuer-url>
 - In the Convex dashboard, find the public URL associated with your deployment.
 - Replace `<your-convex-url>` in the `.env.local` file with your Convex public URL.
 
-7. #### Clerk Authentication Keys
+7. Clerk Authentication Keys
 
 - Visit the Clerk dashboard: [https://clerk.dev](https://clerk.dev)
 - Log in to your Clerk account or sign up if you don't have one.
@@ -168,7 +168,7 @@ CLERK_ISSUER_URL=<your-clerk-issuer-url>
 - Replace `<your-clerk-issuer-url>` with the url that you copied.
 - Also, go to Convex dashboard > Settings > Environment Variables > Add `CLERK_ISSUER_URL` variable with value that you copied.
 
-8. #### Edge Store Keys
+8. Edge Store Keys
 
 - If you are using an Edge Store service, navigate to the respective dashboard or service provider.
 - Obtain the "Access Key" and "Secret Key" for your Edge Store.
