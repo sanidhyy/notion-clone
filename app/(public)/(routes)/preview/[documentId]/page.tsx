@@ -52,7 +52,7 @@ const DocumentIdPage = ({ params }: DocumentIdPageProps) => {
   if (document === null) return <div>Not found.</div>;
 
   return (
-    <div className="pb-40">
+    <div className="pb-40 dark:bg-[#1F1F1F]">
       <Cover preview url={document.coverImage} />
       <div className="md:max-w-3xl lg:max-w-3xl mx-auto">
         <Toolbar preview initialData={document} />
