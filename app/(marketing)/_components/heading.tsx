@@ -2,11 +2,12 @@
 
 import { SignUpButton } from "@clerk/clerk-react";
 import { useConvexAuth } from "convex/react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Github } from "lucide-react";
 import Link from "next/link";
 
 import { Spinner } from "@/components/spinner";
 import { Button } from "@/components/ui/button";
+import { links } from "@/config";
 
 export const Heading = () => {
   const { isAuthenticated, isLoading } = useConvexAuth();
@@ -22,28 +23,37 @@ export const Heading = () => {
         Jotion is the connected workspace where <br />
         better, faster work happens.
       </h3>
-      {isLoading && (
-        <div className="w-full flex items-center justify-center">
-          <Spinner size="lg" />
-        </div>
-      )}
+      <div className="flex items-center justify-center">
+        {isLoading && <Spinner size="lg" />}
 
-      {isAuthenticated && !isLoading && (
-        <Button asChild>
-          <Link href="/documents">
-            Enter Jotion
-            <ArrowRight className="h-4 w-4 ml-2" />
+        {isAuthenticated && !isLoading && (
+          <Button asChild>
+            <Link href="/documents">
+              Enter Jotion
+              <ArrowRight className="h-4 w-4 ml-2" />
+            </Link>
+          </Button>
+        )}
+
+        {!isAuthenticated && !isLoading && (
+          <SignUpButton mode="modal">
+            <Button>
+              Get Jotion free <ArrowRight className="h-4 w-4 ml-2" />
+            </Button>
+          </SignUpButton>
+        )}
+
+        <Button variant="link" asChild>
+          <Link
+            href={links.sourceCode}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <Github className="h-4 w-4 mr-2" />
+            Source Code
           </Link>
         </Button>
-      )}
-
-      {!isAuthenticated && !isLoading && (
-        <SignUpButton mode="modal">
-          <Button>
-            Get Jotion free <ArrowRight className="h-4 w-4 ml-2" />
-          </Button>
-        </SignUpButton>
-      )}
+      </div>
     </div>
   );
 };

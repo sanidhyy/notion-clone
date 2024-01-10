@@ -57,3 +57,7 @@ export const siteConfig: Metadata = {
     url: "https://github.com/sanidhyy",
   },
 } as const;
+
+export const links = {
+  sourceCode: "https://github.com/sanidhyy/learnhub",
+} as const;
