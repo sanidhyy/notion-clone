@@ -3,8 +3,9 @@
 import { useQuery } from "convex/react";
 
 import { Cover } from "@/components/cover";
-import { Skeleton } from "@/components/ui/skeleton";
+import { Editor } from "@/components/editor";
 import { Toolbar } from "@/components/toolbar";
+import { Skeleton } from "@/components/ui/skeleton";
 import { api } from "@/convex/_generated/api";
 import type { Id } from "@/convex/_generated/dataModel";
 
@@ -41,6 +42,7 @@ const DocumentIdPage = ({ params }: DocumentIdPageProps) => {
       <Cover url={document.coverImage} />
       <div className="md:max-w-3xl lg:max-w-3xl mx-auto">
         <Toolbar initialData={document} />
+        <Editor onChange={() => {}} initialContent={document.content} />
       </div>
     </div>
   );
