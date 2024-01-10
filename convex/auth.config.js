@@ -1,7 +1,7 @@
 const authConfig = {
   providers: [
     {
-      domain: "https://infinite-titmouse-77.clerk.accounts.dev",
+      domain: process.env.CLERK_ISSUER_URL,
       applicationID: "convex",
     },
   ],
