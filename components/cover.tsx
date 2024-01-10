@@ -29,6 +29,7 @@ export const Cover = ({ url, preview }: CoverProps) => {
         url,
       });
     }
+
     removeCoverImage({
       id: params.documentId as Id<"documents">,
     });
@@ -49,7 +50,7 @@ export const Cover = ({ url, preview }: CoverProps) => {
       {url && !preview && (
         <div className="opacity-0 group-hover:opacity-100 absolute bottom-5 right-5 flex items-center gap-x-2">
           <Button
-            onClick={coverImage.onOpen}
+            onClick={() => coverImage.onReplace(url)}
             className="text-muted-foreground text-xs"
             variant="outline"
             size="sm"
