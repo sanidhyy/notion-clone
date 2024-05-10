@@ -208,6 +208,7 @@ You might encounter some bugs while using this app. You are more than welcome to
 
 Useful resources and dependencies that are used in Jotion.
 
+- Thanks to CodeWithAntonio: https://codewithantonio.com/
 - [@blocknote/core](https://www.npmjs.com/package/@blocknote/core): ^0.9.4
 - [@blocknote/react](https://www.npmjs.com/package/@blocknote/react): ^0.9.4
 - [@clerk/clerk-react](https://www.npmjs.com/package/@clerk/clerk-react): ^4.30.2
