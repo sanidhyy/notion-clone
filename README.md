@@ -44,23 +44,13 @@
 Here is the folder structure of this app.
 
 <!--- FOLDER_STRUCTURE_START --->
-
 ```bash
 notion-clone/
   |- app/
     |-- (main)/
-        |--- _components/
-        |--- (routes)/documents/[documentId]/
-        |--- layout.tsx
-    |-- (marketing)/coures/[courseId]/
-        |--- _components/
-        |--- layout.tsx
-        |--- page.tsx
+    |-- (marketing)/
     |-- (public)/
-        |--- (routes)/preview/[documentId]/
-        |--- layout.tsx
-    |-- api/edgestore/[...edgestore]/
-        |--- route.ts
+    |-- api/
     |-- error.tsx
     |-- globals.css
     |-- layout.tsx
@@ -88,29 +78,29 @@ notion-clone/
     |-- schema.ts
     |-- tsconfig.json
   |- hooks/
-    |-- use-cover-image.ts
-    |-- use-origin.ts
-    |-- use-scroll-top.ts
-    |-- use-search.ts
-    |-- use-settings.ts
+    |-- use-cover-image.tsx
+    |-- use-origin.tsx
+    |-- use-scroll-top.tsx
+    |-- use-search.tsx
+    |-- use-settings.tsx
   |- lib/
     |-- edgestore.ts
-    |-- db.ts
+    |-- utils.ts
   |- public/
   |- .env.example
-  |- .env.local
+  |- .env/.env.local
   |- .eslintrc.json
   |- .gitignore
+  |- bun.lock
   |- components.json
   |- environment.d.ts
   |- next.config.js
-  |- package-lock.json
   |- package.json
   |- postcss.config.js
   |- tailwind.config.ts
   |- tsconfig.json
+  |- vercel.ts
 ```
-
 <!--- FOLDER_STRUCTURE_END --->
 
 <br />
@@ -214,46 +204,52 @@ Useful resources and dependencies that are used in Jotion.
 
 - Thanks to CodeWithAntonio: https://codewithantonio.com/
 <!--- DEPENDENCIES_START --->
-- [@blocknote/core](https://www.npmjs.com/package/@blocknote/core): ^0.9.4
-- [@blocknote/react](https://www.npmjs.com/package/@blocknote/react): ^0.9.4
+- [@blocknote/core](https://www.npmjs.com/package/@blocknote/core): ^0.46.2
+- [@blocknote/mantine](https://www.npmjs.com/package/@blocknote/mantine): ^0.46.2
+- [@blocknote/react](https://www.npmjs.com/package/@blocknote/react): ^0.46.2
 - [@clerk/clerk-react](https://www.npmjs.com/package/@clerk/clerk-react): ^4.30.2
 - [@clerk/themes](https://www.npmjs.com/package/@clerk/themes): ^1.7.9
 - [@edgestore/react](https://www.npmjs.com/package/@edgestore/react): ^0.1.6
 - [@edgestore/server](https://www.npmjs.com/package/@edgestore/server): ^0.1.6
-- [@radix-ui/react-alert-dialog](https://www.npmjs.com/package/@radix-ui/react-alert-dialog): ^1.0.5
-- [@radix-ui/react-avatar](https://www.npmjs.com/package/@radix-ui/react-avatar): ^1.0.4
+- [@mantine/core](https://www.npmjs.com/package/@mantine/core): ^8.3.11
+- [@mantine/hooks](https://www.npmjs.com/package/@mantine/hooks): ^8.3.11
+- [@mantine/utils](https://www.npmjs.com/package/@mantine/utils): ^6.0.22
+- [@radix-ui/react-alert-dialog](https://www.npmjs.com/package/@radix-ui/react-alert-dialog): ^1.1.15
+- [@radix-ui/react-avatar](https://www.npmjs.com/package/@radix-ui/react-avatar): ^1.1.11
 - [@radix-ui/react-dialog](https://www.npmjs.com/package/@radix-ui/react-dialog): ^1.0.5
-- [@radix-ui/react-dropdown-menu](https://www.npmjs.com/package/@radix-ui/react-dropdown-menu): ^2.0.6
-- [@radix-ui/react-label](https://www.npmjs.com/package/@radix-ui/react-label): ^2.0.2
-- [@radix-ui/react-popover](https://www.npmjs.com/package/@radix-ui/react-popover): ^1.0.7
+- [@radix-ui/react-dropdown-menu](https://www.npmjs.com/package/@radix-ui/react-dropdown-menu): ^2.1.16
+- [@radix-ui/react-label](https://www.npmjs.com/package/@radix-ui/react-label): ^2.1.8
+- [@radix-ui/react-popover](https://www.npmjs.com/package/@radix-ui/react-popover): ^1.1.15
 - [@radix-ui/react-slot](https://www.npmjs.com/package/@radix-ui/react-slot): ^1.0.2
-- [class-variance-authority](https://www.npmjs.com/package/class-variance-authority): ^0.7.0
-- [clsx](https://www.npmjs.com/package/clsx): ^2.1.0
-- [cmdk](https://www.npmjs.com/package/cmdk): ^0.2.0
+- [@types/node](https://www.npmjs.com/package/@types/node): ^20.19.33
+- [@types/react](https://www.npmjs.com/package/@types/react): ^19.2.14
+- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.2.3
+- [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.0.33
+- [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.4.24
+- [class-variance-authority](https://www.npmjs.com/package/class-variance-authority): ^0.7.1
+- [clsx](https://www.npmjs.com/package/clsx): ^2.1.1
+- [cmdk](https://www.npmjs.com/package/cmdk): ^0.2.1
 - [convex](https://www.npmjs.com/package/convex): ^1.7.1
-- [emoji-picker-react](https://www.npmjs.com/package/emoji-picker-react): ^4.6.7
-- [lucide-react](https://www.npmjs.com/package/lucide-react): ^0.307.0
-- [next](https://www.npmjs.com/package/next): 14.0.4
-- [next-themes](https://www.npmjs.com/package/next-themes): ^0.2.1
-- [react](https://www.npmjs.com/package/react): ^18
-- [react-dom](https://www.npmjs.com/package/react-dom): ^18
-- [react-dropzone](https://www.npmjs.com/package/react-dropzone): ^14.2.3
-- [react-textarea-autosize](https://www.npmjs.com/package/react-textarea-autosize): ^8.5.3
-- [sonner](https://www.npmjs.com/package/sonner): ^1.3.1
-- [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^2.2.0
-- [tailwindcss-animate](https://www.npmjs.com/package/tailwindcss-animate): ^1.0.7
-- [usehooks-ts](https://www.npmjs.com/package/usehooks-ts): ^2.9.1
-- [zod](https://www.npmjs.com/package/zod): ^3.22.4
-- [zustand](https://www.npmjs.com/package/zustand): ^4.4.7
-- [@types/node](https://www.npmjs.com/package/@types/node): ^20
-- [@types/react](https://www.npmjs.com/package/@types/react): ^18
-- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^18
-- [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.0.1
+- [emoji-picker-react](https://www.npmjs.com/package/emoji-picker-react): ^4.18.0
 - [eslint](https://www.npmjs.com/package/eslint): ^8
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 14.0.4
+- [lucide-react](https://www.npmjs.com/package/lucide-react): ^0.564.0
+- [next](https://www.npmjs.com/package/next): 15.5.10
+- [next-themes](https://www.npmjs.com/package/next-themes): ^0.4.6
 - [postcss](https://www.npmjs.com/package/postcss): ^8
+- [react](https://www.npmjs.com/package/react): ^19.2.4
+- [react-dom](https://www.npmjs.com/package/react-dom): ^19.2.4
+- [react-dropzone](https://www.npmjs.com/package/react-dropzone): ^14.4.1
+- [react-textarea-autosize](https://www.npmjs.com/package/react-textarea-autosize): ^8.5.9
+- [sonner](https://www.npmjs.com/package/sonner): ^1.7.4
+- [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^2.2.0
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.3.0
-- [typescript](https://www.npmjs.com/package/typescript): ^5
+- [tailwindcss-animate](https://www.npmjs.com/package/tailwindcss-animate): ^1.0.7
+- [typescript](https://www.npmjs.com/package/typescript): ^5.9.3
+- [usehooks-ts](https://www.npmjs.com/package/usehooks-ts): ^2.16.0
+- [zod](https://www.npmjs.com/package/zod): ^3.25.76
+- [zustand](https://www.npmjs.com/package/zustand): ^4.5.7
+
 <!--- DEPENDENCIES_END --->
 
 ## :coffee: Buy Me a Coffee
