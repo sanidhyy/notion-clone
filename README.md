@@ -43,6 +43,8 @@
 
 Here is the folder structure of this app.
 
+<!--- FOLDER_STRUCTURE_START --->
+
 ```bash
 notion-clone/
   |- app/
@@ -108,6 +110,8 @@ notion-clone/
   |- tailwind.config.ts
   |- tsconfig.json
 ```
+
+<!--- FOLDER_STRUCTURE_END --->
 
 <br />
 
@@ -209,6 +213,7 @@ You might encounter some bugs while using this app. You are more than welcome to
 Useful resources and dependencies that are used in Jotion.
 
 - Thanks to CodeWithAntonio: https://codewithantonio.com/
+<!--- DEPENDENCIES_START --->
 - [@blocknote/core](https://www.npmjs.com/package/@blocknote/core): ^0.9.4
 - [@blocknote/react](https://www.npmjs.com/package/@blocknote/react): ^0.9.4
 - [@clerk/clerk-react](https://www.npmjs.com/package/@clerk/clerk-react): ^4.30.2
@@ -249,6 +254,7 @@ Useful resources and dependencies that are used in Jotion.
 - [postcss](https://www.npmjs.com/package/postcss): ^8
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.3.0
 - [typescript](https://www.npmjs.com/package/typescript): ^5
+<!--- DEPENDENCIES_END --->
 
 ## :coffee: Buy Me a Coffee
 
