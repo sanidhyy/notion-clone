@@ -192,7 +192,7 @@ CLERK_ISSUER_URL=<your-clerk-issuer-url>
 
 ## :wrench: Stats
 
-[![Stats for Jotion](/.github/images/stats.svg "Stats for Jotion")](https://pagespeed.web.dev/analysis/https-app-jotion-vercel-app/3wh1wtqo2u?form_factor=mobile "Stats for Jotion")
+[![Stats for Jotion](/.github/images/stats.svg "Stats for Jotion")](https://pagespeed.web.dev/analysis?url=https://app-jotion.vercel.app "Stats for Jotion")
 
 ## :raised_hands: Contribute
 
