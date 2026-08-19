@@ -223,7 +223,7 @@ Useful resources and dependencies that are used in Jotion.
 - [@radix-ui/react-label](https://www.npmjs.com/package/@radix-ui/react-label): ^2.1.8
 - [@radix-ui/react-popover](https://www.npmjs.com/package/@radix-ui/react-popover): ^1.1.15
 - [@radix-ui/react-slot](https://www.npmjs.com/package/@radix-ui/react-slot): ^1.0.2
-- [@types/node](https://www.npmjs.com/package/@types/node): ^20.19.33
+- [@types/node](https://www.npmjs.com/package/@types/node): ^26.2.0
 - [@types/react](https://www.npmjs.com/package/@types/react): ^19.2.14
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.2.3
 - [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.0.33
@@ -244,12 +244,12 @@ Useful resources and dependencies that are used in Jotion.
 - [react-dropzone](https://www.npmjs.com/package/react-dropzone): ^14.4.1
 - [react-textarea-autosize](https://www.npmjs.com/package/react-textarea-autosize): ^8.5.9
 - [sonner](https://www.npmjs.com/package/sonner): ^1.7.4
-- [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^2.2.0
+- [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^3.6.0
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.3.0
 - [tailwindcss-animate](https://www.npmjs.com/package/tailwindcss-animate): ^1.0.7
 - [typescript](https://www.npmjs.com/package/typescript): ^5.9.3
 - [usehooks-ts](https://www.npmjs.com/package/usehooks-ts): ^2.16.0
-- [zod](https://www.npmjs.com/package/zod): ^3.25.76
+- [zod](https://www.npmjs.com/package/zod): ^4.4.3
 - [zustand](https://www.npmjs.com/package/zustand): ^4.5.7
 
 <!--- DEPENDENCIES_END --->
