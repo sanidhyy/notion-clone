@@ -209,8 +209,8 @@ Useful resources and dependencies that are used in Jotion.
 - [@blocknote/core](https://www.npmjs.com/package/@blocknote/core): ^0.46.2
 - [@blocknote/mantine](https://www.npmjs.com/package/@blocknote/mantine): ^0.46.2
 - [@blocknote/react](https://www.npmjs.com/package/@blocknote/react): ^0.46.2
-- [@clerk/clerk-react](https://www.npmjs.com/package/@clerk/clerk-react): ^4.30.2
-- [@clerk/themes](https://www.npmjs.com/package/@clerk/themes): ^1.7.9
+- [@clerk/react](https://www.npmjs.com/package/@clerk/react): ^6.14.4
+- [@clerk/ui](https://www.npmjs.com/package/@clerk/ui): ^1.30.4
 - [@edgestore/react](https://www.npmjs.com/package/@edgestore/react): ^0.1.6
 - [@edgestore/server](https://www.npmjs.com/package/@edgestore/server): ^0.1.6
 - [@mantine/core](https://www.npmjs.com/package/@mantine/core): ^8.3.11
@@ -231,12 +231,12 @@ Useful resources and dependencies that are used in Jotion.
 - [class-variance-authority](https://www.npmjs.com/package/class-variance-authority): ^0.7.1
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.1
 - [cmdk](https://www.npmjs.com/package/cmdk): ^0.2.1
-- [convex](https://www.npmjs.com/package/convex): ^1.7.1
+- [convex](https://www.npmjs.com/package/convex): ^1.44.0
 - [emoji-picker-react](https://www.npmjs.com/package/emoji-picker-react): ^4.18.0
 - [eslint](https://www.npmjs.com/package/eslint): ^8
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 14.0.4
 - [lucide-react](https://www.npmjs.com/package/lucide-react): ^0.564.0
-- [next](https://www.npmjs.com/package/next): 15.5.18
+- [next](https://www.npmjs.com/package/next): 15.5.21
 - [next-themes](https://www.npmjs.com/package/next-themes): ^0.4.6
 - [postcss](https://www.npmjs.com/package/postcss): ^8
 - [react](https://www.npmjs.com/package/react): ^19.2.4
