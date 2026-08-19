@@ -25,10 +25,10 @@ importers:
         version: 1.30.4(@solana/web3.js@1.98.4(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6))(@types/react@19.2.18)(bs58@6.0.0)(bufferutil@4.1.0)(react-dom@19.2.8(react@19.2.8))(react-native@0.87.0(@babel/core@7.29.7)(@types/react@19.2.18)(bufferutil@4.1.0)(react@19.2.8)(utf-8-validate@6.0.6))(react@19.2.8)(typescript@5.9.3)(utf-8-validate@6.0.6)
       '@edgestore/react':
         specifier: ^0.1.6
-        version: 0.1.7(next@15.5.21(@babel/core@7.29.7)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@3.25.76)
+        version: 0.1.7(next@15.5.21(@babel/core@7.29.7)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@4.4.3)
       '@edgestore/server':
         specifier: ^0.1.6
-        version: 0.1.7(@aws-sdk/client-s3@3.1112.0)(@aws-sdk/s3-request-presigner@3.1112.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@3.25.76)
+        version: 0.1.7(@aws-sdk/client-s3@3.1112.0)(@aws-sdk/s3-request-presigner@3.1112.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@4.4.3)
       '@mantine/core':
         specifier: ^8.3.11
         version: 8.3.18(@mantine/hooks@8.3.18(react@19.2.8))(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -111,8 +111,8 @@ importers:
         specifier: ^2.16.0
         version: 2.16.0(react@19.2.8)
       zod:
-        specifier: ^3.25.76
-        version: 3.25.76
+        specifier: ^4.4.3
+        version: 4.4.3
       zustand:
         specifier: ^4.5.7
         version: 4.5.7(@types/react@19.2.18)(react@19.2.8)
@@ -5177,6 +5177,9 @@ packages:
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+
   zustand@4.5.7:
     resolution: {integrity: sha512-CHOUy7mu3lbD6o6LJLfllpjkzhHXSBlX8B9+qPddUsIfeF5S/UZ5q0kmCsnRqT1UHFQZchNFDDzMbQsuesHWlw==}
     engines: {node: '>=12.7.0'}
@@ -5654,11 +5657,11 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@edgestore/react@0.1.7(next@15.5.21(@babel/core@7.29.7)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@3.25.76)':
+  '@edgestore/react@0.1.7(next@15.5.21(@babel/core@7.29.7)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@4.4.3)':
     dependencies:
       '@aws-sdk/client-s3': 3.1112.0
       '@aws-sdk/s3-request-presigner': 3.1112.0
-      '@edgestore/shared': 0.1.7(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@3.25.76)
+      '@edgestore/shared': 0.1.7(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@4.4.3)
       '@panva/hkdf': 1.2.1
       cookie: 0.5.0
       jose: 4.15.9
@@ -5666,11 +5669,11 @@ snapshots:
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
       uuid: 9.0.1
-      zod: 3.25.76
+      zod: 4.4.3
 
-  '@edgestore/server@0.1.7(@aws-sdk/client-s3@3.1112.0)(@aws-sdk/s3-request-presigner@3.1112.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@3.25.76)':
+  '@edgestore/server@0.1.7(@aws-sdk/client-s3@3.1112.0)(@aws-sdk/s3-request-presigner@3.1112.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@4.4.3)':
     dependencies:
-      '@edgestore/shared': 0.1.7(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@3.25.76)
+      '@edgestore/shared': 0.1.7(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@4.4.3)
       '@panva/hkdf': 1.2.1
       cookie: 0.5.0
       jose: 4.15.9
@@ -5678,17 +5681,17 @@ snapshots:
     optionalDependencies:
       '@aws-sdk/client-s3': 3.1112.0
       '@aws-sdk/s3-request-presigner': 3.1112.0
-      zod: 3.25.76
+      zod: 4.4.3
     transitivePeerDependencies:
       - react
       - react-dom
 
-  '@edgestore/shared@0.1.7(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@3.25.76)':
+  '@edgestore/shared@0.1.7(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@4.4.3)':
     dependencies:
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
     optionalDependencies:
-      zod: 3.25.76
+      zod: 4.4.3
 
   '@emnapi/core@1.10.0':
     dependencies:
@@ -10526,7 +10529,7 @@ snapshots:
 
   rpc-websockets@9.3.9:
     dependencies:
-      '@swc/helpers': 0.5.15
+      '@swc/helpers': 0.5.21
       '@types/uuid': 10.0.0
       '@types/ws': 8.18.1
       buffer: 6.0.3
@@ -11302,6 +11305,8 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   zod@3.25.76: {}
+
+  zod@4.4.3: {}
 
   zustand@4.5.7(@types/react@19.2.18)(react@19.2.8):
     dependencies:
