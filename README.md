@@ -44,6 +44,7 @@
 Here is the folder structure of this app.
 
 <!--- FOLDER_STRUCTURE_START --->
+
 ```bash
 notion-clone/
   |- app/
@@ -101,6 +102,7 @@ notion-clone/
   |- tsconfig.json
   |- vercel.ts
 ```
+
 <!--- FOLDER_STRUCTURE_END --->
 
 <br />
@@ -170,9 +172,9 @@ CLERK_ISSUER_URL=<your-clerk-issuer-url>
 - Obtain the "Access Key" and "Secret Key" for your Edge Store.
 - Replace `<your-edge-store-access-key>` and `<your-edge-store-secret-key>` in the `.env.local` file with your Edge Store keys.
 
-9. Open terminal in root directory. Run `npm install --legacy-peer-deps` or `yarn install --legacy-peer-deps`.
+9. Open terminal in root directory. Run `npm install --legacy-peer-deps` or `pnpm install --legacy-peer-deps` or `yarn install --legacy-peer-deps`.
 
-10. Now app is fully configured 👍 and you can start using this app using either one of `npm run dev` or `yarn dev` in one tab and `npx convex dev` in another tab.
+10. Now app is fully configured 👍 and you can start using this app using either one of `npm run dev` or `pnpm dev` or `yarn dev` in one tab and `npx convex dev` in another tab.
 
 **NOTE:** Please make sure to keep your API keys and configuration values secure and do not expose them publicly.
 
