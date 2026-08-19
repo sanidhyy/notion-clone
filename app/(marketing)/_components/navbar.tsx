@@ -1,6 +1,6 @@
 "use client";
 
-import { SignInButton, UserButton } from "@clerk/clerk-react";
+import { SignInButton, UserButton } from "@clerk/react";
 import { useConvexAuth } from "convex/react";
 import Link from "next/link";
 
@@ -48,7 +48,7 @@ export const Navbar = () => {
               <Link href="/documents">Enter Jotion</Link>
             </Button>
 
-            <UserButton afterSignOutUrl="/" />
+            <UserButton />
           </>
         )}
 

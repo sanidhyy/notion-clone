@@ -1,6 +1,6 @@
 "use client";
 
-import { SignUpButton } from "@clerk/clerk-react";
+import { SignUpButton } from "@clerk/react";
 import { useConvexAuth } from "convex/react";
 import { ArrowRight, Github } from "lucide-react";
 import Link from "next/link";
