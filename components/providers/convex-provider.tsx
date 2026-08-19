@@ -1,7 +1,7 @@
 "use client";
 
-import { ClerkProvider, useAuth } from "@clerk/clerk-react";
-import { dark } from "@clerk/themes";
+import { ClerkProvider, useAuth } from "@clerk/react";
+import { dark } from "@clerk/ui/themes";
 import { ConvexReactClient } from "convex/react";
 import { ConvexProviderWithClerk } from "convex/react-clerk";
 import { useTheme } from "next-themes";
@@ -15,8 +15,9 @@ export const ConvexClientProvider = ({ children }: PropsWithChildren) => {
   return (
     <ClerkProvider
       publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY!}
+      afterSignOutUrl="/"
       appearance={{
-        baseTheme: resolvedTheme === "dark" ? dark : undefined,
+        theme: resolvedTheme === "dark" ? dark : undefined,
       }}
     >
       <ConvexProviderWithClerk useAuth={useAuth} client={convex}>

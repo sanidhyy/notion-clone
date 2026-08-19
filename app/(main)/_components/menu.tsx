@@ -1,6 +1,6 @@
 "use client";
 
-import { useUser } from "@clerk/clerk-react";
+import { useUser } from "@clerk/react";
 import { useMutation } from "convex/react";
 import { MoreHorizontal, Trash } from "lucide-react";
 import { useRouter } from "next/navigation";
