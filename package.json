@@ -41,7 +41,7 @@
     "react-dropzone": "^14.4.1",
     "react-textarea-autosize": "^8.5.9",
     "sonner": "^1.7.4",
-    "tailwind-merge": "^2.2.0",
+    "tailwind-merge": "^3.6.0",
     "tailwindcss-animate": "^1.0.7",
     "usehooks-ts": "^2.16.0",
     "zod": "^3.25.76",
