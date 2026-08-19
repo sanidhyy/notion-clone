@@ -44,7 +44,6 @@
 Here is the folder structure of this app.
 
 <!--- FOLDER_STRUCTURE_START --->
-
 ```bash
 notion-clone/
   |- app/
@@ -92,17 +91,17 @@ notion-clone/
   |- .env/.env.local
   |- .eslintrc.json
   |- .gitignore
-  |- bun.lock
   |- components.json
   |- environment.d.ts
   |- next.config.js
   |- package.json
+  |- pnpm-lock.yaml
+  |- pnpm-workspace.yaml
   |- postcss.config.js
   |- tailwind.config.ts
   |- tsconfig.json
   |- vercel.ts
 ```
-
 <!--- FOLDER_STRUCTURE_END --->
 
 <br />
