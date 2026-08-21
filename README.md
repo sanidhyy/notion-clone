@@ -92,6 +92,7 @@ notion-clone/
   |- .eslintrc.json
   |- .gitignore
   |- components.json
+  |- css.d.ts
   |- environment.d.ts
   |- next.config.js
   |- package.json
@@ -247,7 +248,7 @@ Useful resources and dependencies that are used in Jotion.
 - [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^3.6.0
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.3.0
 - [tailwindcss-animate](https://www.npmjs.com/package/tailwindcss-animate): ^1.0.7
-- [typescript](https://www.npmjs.com/package/typescript): ^5.9.3
+- [typescript](https://www.npmjs.com/package/typescript): ^6.0.3
 - [usehooks-ts](https://www.npmjs.com/package/usehooks-ts): ^2.16.0
 - [zod](https://www.npmjs.com/package/zod): ^4.4.3
 - [zustand](https://www.npmjs.com/package/zustand): ^4.5.7
