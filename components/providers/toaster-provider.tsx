@@ -12,7 +12,9 @@ export const ToasterProvider = () => {
     <Toaster
       position="bottom-center"
       theme={resolvedTheme === "dark" ? "dark" : "light"}
-      loadingIcon={<Spinner />}
+      icons={{
+        loading: <Spinner />,
+      }}
       richColors
     />
   );
