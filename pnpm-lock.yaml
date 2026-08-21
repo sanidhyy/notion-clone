@@ -24,8 +24,8 @@ importers:
         specifier: ^1.30.4
         version: 1.30.4(@solana/web3.js@1.98.4(bufferutil@4.1.0)(typescript@6.0.3)(utf-8-validate@6.0.6))(@types/react@19.2.18)(bs58@6.0.0)(bufferutil@4.1.0)(react-dom@19.2.8(react@19.2.8))(react-native@0.87.0(@babel/core@7.29.7)(@types/react@19.2.18)(bufferutil@4.1.0)(react@19.2.8)(utf-8-validate@6.0.6))(react@19.2.8)(typescript@6.0.3)(utf-8-validate@6.0.6)
       '@edgestore/react':
-        specifier: ^0.1.6
-        version: 0.1.7(next@15.5.21(@babel/core@7.29.7)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@4.4.3)
+        specifier: ^0.8.0
+        version: 0.8.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@4.4.3)
       '@edgestore/server':
         specifier: ^0.1.6
         version: 0.1.7(@aws-sdk/client-s3@3.1112.0)(@aws-sdk/s3-request-presigner@3.1112.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@4.4.3)
@@ -371,10 +371,9 @@ packages:
       react: ^18.0.0 || ~19.0.3 || ~19.1.4 || ~19.2.3 || ~19.3.0-0
       react-dom: ^18.0.0 || ~19.0.3 || ~19.1.4 || ~19.2.3 || ~19.3.0-0
 
-  '@edgestore/react@0.1.7':
-    resolution: {integrity: sha512-NaoS9VwzIDhYi47NQoOx4DllsXMcL5c+yl5JHs8JqxT3tEmVPKyj7z0reRGN5XIf7yxRIAPrwwiZ0PovWNo2rA==}
+  '@edgestore/react@0.8.0':
+    resolution: {integrity: sha512-AOODFpPYjTnKf8Ky7lR/7kQ7tWvVZR9WRiPUs+7vwxjJ97g7YPiVrFQ0XyQ/2Lyn5gz534uw42gtvPGIqPC5yA==}
     peerDependencies:
-      next: '*'
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
       zod: '>=3.0.0'
@@ -398,6 +397,16 @@ packages:
 
   '@edgestore/shared@0.1.7':
     resolution: {integrity: sha512-4GQjy+Bgq0iQXSYPVGg7Z4cUBik4XSDxuLCsAGzXUi6n7GAqlpIOQbK0cU4Vta4Zh73ci1oIlt4Lx0VcyalArQ==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+      zod: '>=3.0.0'
+    peerDependenciesMeta:
+      zod:
+        optional: true
+
+  '@edgestore/shared@0.8.0':
+    resolution: {integrity: sha512-BgHVFoyuEJ3y7KAV/87DHEc5uQATQOtpaydm+XMAY+TmGHCaWLSnEOdorFgvAPPjO04F9+qvVkcE/J337V9m3A==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
@@ -2746,6 +2755,10 @@ packages:
 
   cookie@0.5.0:
     resolution: {integrity: sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw==}
+    engines: {node: '>= 0.6'}
+
+  cookie@0.7.2:
+    resolution: {integrity: sha512-yki5XnKuf750l50uGTllt6kKILY4nQ1eNIQatoXEByZ5dWgnKqbnqmTrBE5B4N7lrMJKQ2ytWMiTO2o0v6Ew/w==}
     engines: {node: '>= 0.6'}
 
   copy-to-clipboard@3.3.3:
@@ -5686,15 +5699,14 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@edgestore/react@0.1.7(next@15.5.21(@babel/core@7.29.7)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@4.4.3)':
+  '@edgestore/react@0.8.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@4.4.3)':
     dependencies:
       '@aws-sdk/client-s3': 3.1112.0
       '@aws-sdk/s3-request-presigner': 3.1112.0
-      '@edgestore/shared': 0.1.7(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@4.4.3)
+      '@edgestore/shared': 0.8.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@4.4.3)
       '@panva/hkdf': 1.2.1
-      cookie: 0.5.0
+      cookie: 0.7.2
       jose: 4.15.9
-      next: 15.5.21(@babel/core@7.29.7)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
       uuid: 9.0.1
@@ -5716,6 +5728,13 @@ snapshots:
       - react-dom
 
   '@edgestore/shared@0.1.7(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@4.4.3)':
+    dependencies:
+      react: 19.2.8
+      react-dom: 19.2.8(react@19.2.8)
+    optionalDependencies:
+      zod: 4.4.3
+
+  '@edgestore/shared@0.8.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@4.4.3)':
     dependencies:
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
@@ -8214,6 +8233,8 @@ snapshots:
       - utf-8-validate
 
   cookie@0.5.0: {}
+
+  cookie@0.7.2: {}
 
   copy-to-clipboard@3.3.3:
     dependencies:
