@@ -2,7 +2,8 @@
 
 import { SignUpButton } from "@clerk/react";
 import { useConvexAuth } from "convex/react";
-import { ArrowRight, Github } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 import { Spinner } from "@/components/spinner";
@@ -49,7 +50,22 @@ export const Heading = () => {
             target="_blank"
             rel="noreferrer noopener"
           >
-            <Github className="h-4 w-4 mr-2" />
+            <Image
+              src="/github-black.svg"
+              alt="GitHub"
+              width={16}
+              height={16}
+              className="h-4 w-4 mr-2 dark:hidden"
+              draggable={false}
+            />
+            <Image
+              src="/github-white.svg"
+              alt="GitHub"
+              width={16}
+              height={16}
+              className="h-4 w-4 mr-2 hidden dark:block"
+              draggable={false}
+            />
             Source Code
           </Link>
         </Button>

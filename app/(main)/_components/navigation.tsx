@@ -3,7 +3,6 @@
 import { useMutation } from "convex/react";
 import {
   ChevronsLeft,
-  Github,
   Menu,
   Plus,
   PlusCircle,
@@ -11,6 +10,7 @@ import {
   Settings,
   Trash,
 } from "lucide-react";
+import Image from "next/image";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import { type ElementRef, useRef, useState, useEffect } from "react";
 import { toast } from "sonner";
@@ -32,6 +32,27 @@ import { Navbar } from "./navbar";
 import { TrashBox } from "./trash-box";
 import { UserItem } from "./user-item";
 import { links } from "@/config";
+
+const GithubIcon = ({ className }: { className?: string }) => (
+  <span className={cn("inline-flex items-center justify-center", className)}>
+    <Image
+      src="/github-black.svg"
+      alt="GitHub"
+      width={18}
+      height={18}
+      className="dark:hidden select-none"
+      draggable={false}
+    />
+    <Image
+      src="/github-white.svg"
+      alt="GitHub"
+      width={18}
+      height={18}
+      className="hidden dark:block select-none"
+      draggable={false}
+    />
+  </span>
+);
 
 export const Navigation = () => {
   const settings = useSettings();
@@ -192,7 +213,7 @@ export const Navigation = () => {
               onClick={() =>
                 window.open(links.sourceCode, "_blank", "noopener,noreferrer")
               }
-              icon={Github}
+              icon={GithubIcon}
               label="Source Code"
             />
           </div>
