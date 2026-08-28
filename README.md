@@ -250,7 +250,7 @@ Useful resources and dependencies that are used in Jotion.
 - [postcss](https://www.npmjs.com/package/postcss): ^8
 - [react](https://www.npmjs.com/package/react): ^19.2.4
 - [react-dom](https://www.npmjs.com/package/react-dom): ^19.2.4
-- [react-dropzone](https://www.npmjs.com/package/react-dropzone): ^14.4.1
+- [react-dropzone](https://www.npmjs.com/package/react-dropzone): ^20.1.1
 - [react-textarea-autosize](https://www.npmjs.com/package/react-textarea-autosize): ^8.5.9
 - [sonner](https://www.npmjs.com/package/sonner): ^2.0.8
 - [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^3.6.0
