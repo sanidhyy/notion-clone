@@ -239,7 +239,7 @@ Useful resources and dependencies that are used in Jotion.
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.4.24
 - [class-variance-authority](https://www.npmjs.com/package/class-variance-authority): ^0.7.1
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.1
-- [cmdk](https://www.npmjs.com/package/cmdk): ^0.2.1
+- [cmdk](https://www.npmjs.com/package/cmdk): ^1.1.1
 - [convex](https://www.npmjs.com/package/convex): ^1.44.0
 - [emoji-picker-react](https://www.npmjs.com/package/emoji-picker-react): ^4.18.0
 - [eslint](https://www.npmjs.com/package/eslint): ^8
