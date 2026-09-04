@@ -30,7 +30,7 @@
     "@vercel/config": "^0.0.33",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "cmdk": "^0.2.1",
+    "cmdk": "^1.1.1",
     "convex": "^1.44.0",
     "emoji-picker-react": "^4.18.0",
     "lucide-react": "^1.34.0",
