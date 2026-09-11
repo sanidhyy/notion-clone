@@ -234,7 +234,7 @@ Useful resources and dependencies that are used in Jotion.
 - [@radix-ui/react-slot](https://www.npmjs.com/package/@radix-ui/react-slot): ^1.0.2
 - [@types/node](https://www.npmjs.com/package/@types/node): ^26.5.0
 - [@types/react](https://www.npmjs.com/package/@types/react): ^19.2.14
-- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.2.3
+- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.2.7
 - [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.7.0
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.4.24
 - [class-variance-authority](https://www.npmjs.com/package/class-variance-authority): ^0.7.1
