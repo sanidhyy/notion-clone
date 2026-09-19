@@ -233,8 +233,8 @@ Useful resources and dependencies that are used in Jotion.
 - [@radix-ui/react-popover](https://www.npmjs.com/package/@radix-ui/react-popover): ^1.1.15
 - [@radix-ui/react-slot](https://www.npmjs.com/package/@radix-ui/react-slot): ^1.0.2
 - [@types/node](https://www.npmjs.com/package/@types/node): ^26.5.0
-- [@types/react](https://www.npmjs.com/package/@types/react): ^19.2.14
-- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.2.7
+- [@types/react](https://www.npmjs.com/package/@types/react): ^19.3.0
+- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.3.0
 - [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.7.0
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.4.24
 - [class-variance-authority](https://www.npmjs.com/package/class-variance-authority): ^0.7.1
@@ -248,8 +248,8 @@ Useful resources and dependencies that are used in Jotion.
 - [next](https://www.npmjs.com/package/next): 16.3.4
 - [next-themes](https://www.npmjs.com/package/next-themes): ^0.4.6
 - [postcss](https://www.npmjs.com/package/postcss): ^8
-- [react](https://www.npmjs.com/package/react): ^19.2.4
-- [react-dom](https://www.npmjs.com/package/react-dom): ^19.2.4
+- [react](https://www.npmjs.com/package/react): ^19.3.0
+- [react-dom](https://www.npmjs.com/package/react-dom): ^19.3.0
 - [react-dropzone](https://www.npmjs.com/package/react-dropzone): ^20.1.1
 - [react-textarea-autosize](https://www.npmjs.com/package/react-textarea-autosize): ^8.5.9
 - [sonner](https://www.npmjs.com/package/sonner): ^2.0.8
