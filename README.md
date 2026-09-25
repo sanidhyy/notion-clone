@@ -232,7 +232,7 @@ Useful resources and dependencies that are used in Jotion.
 - [@radix-ui/react-label](https://www.npmjs.com/package/@radix-ui/react-label): ^2.1.8
 - [@radix-ui/react-popover](https://www.npmjs.com/package/@radix-ui/react-popover): ^1.1.15
 - [@radix-ui/react-slot](https://www.npmjs.com/package/@radix-ui/react-slot): ^1.0.2
-- [@types/node](https://www.npmjs.com/package/@types/node): ^26.5.0
+- [@types/node](https://www.npmjs.com/package/@types/node): ^26.6.2
 - [@types/react](https://www.npmjs.com/package/@types/react): ^19.3.0
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.3.0
 - [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.7.0
