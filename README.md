@@ -240,7 +240,7 @@ Useful resources and dependencies that are used in Jotion.
 - [class-variance-authority](https://www.npmjs.com/package/class-variance-authority): ^0.7.1
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.1
 - [cmdk](https://www.npmjs.com/package/cmdk): ^1.1.1
-- [convex](https://www.npmjs.com/package/convex): ^1.45.0
+- [convex](https://www.npmjs.com/package/convex): ^1.46.0
 - [emoji-picker-react](https://www.npmjs.com/package/emoji-picker-react): ^4.22.2
 - [eslint](https://www.npmjs.com/package/eslint): ^8
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 15.5.26
