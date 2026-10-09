@@ -218,7 +218,7 @@ Useful resources and dependencies that are used in Jotion.
 - [@blocknote/core](https://www.npmjs.com/package/@blocknote/core): ^0.54.2
 - [@blocknote/mantine](https://www.npmjs.com/package/@blocknote/mantine): ^0.54.2
 - [@blocknote/react](https://www.npmjs.com/package/@blocknote/react): ^0.54.2
-- [@clerk/react](https://www.npmjs.com/package/@clerk/react): ^6.17.2
+- [@clerk/react](https://www.npmjs.com/package/@clerk/react): ^6.17.6
 - [@clerk/ui](https://www.npmjs.com/package/@clerk/ui): ^1.36.0
 - [@edgestore/react](https://www.npmjs.com/package/@edgestore/react): ^0.8.0
 - [@edgestore/server](https://www.npmjs.com/package/@edgestore/server): ^0.8.0
