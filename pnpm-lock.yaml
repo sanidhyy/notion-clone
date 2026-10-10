@@ -27,8 +27,8 @@ importers:
         specifier: ^0.8.0
         version: 0.8.0(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(zod@4.6.5)
       '@edgestore/server':
-        specifier: ^0.8.0
-        version: 0.8.0(@aws-sdk/client-s3@3.1112.0)(@aws-sdk/s3-request-presigner@3.1112.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(zod@4.6.5)
+        specifier: ^1.0.0
+        version: 1.0.0(@aws-sdk/client-s3@3.1112.0)(@aws-sdk/s3-request-presigner@3.1112.0)
       '@mantine/core':
         specifier: ^8.3.11
         version: 8.3.18(@mantine/hooks@8.3.18(react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
@@ -404,21 +404,23 @@ packages:
       react-dom: '>=16.8.0'
       zod: '>=3.0.0'
 
-  '@edgestore/server@0.8.0':
-    resolution: {integrity: sha512-ctSbRfSK/6Ts+kVVAnzl5cDjtT46aL9ZqrD/rEfwNNgIxL50wDylhYwc4lG6dVCOCQZ/8mPDwTXM0DPA0cb65g==}
+  '@edgestore/sdk@1.0.0':
+    resolution: {integrity: sha512-eA8yoe/mBQBlautYA8W8iqgGiv1Iua45dwRMGAK4ZBKw3o7JrwQoT3f5wQ/I0NyTvbA56vUCtqZ19vb0Tod7Iw==}
+    engines: {node: '>=22.22.0'}
+
+  '@edgestore/server@1.0.0':
+    resolution: {integrity: sha512-uSbqcLjID+1A877z0cYkAKmIosujKh1eFoOTz74x2x2i4UfdcC/Q/M0lvtRZfTxzCXX9MOFT8NYmvsrvus/AEg==}
+    engines: {node: '>=22.22.0'}
     peerDependencies:
       '@aws-sdk/client-s3': '>=3.0.0'
       '@aws-sdk/s3-request-presigner': '>=3.0.0'
       '@azure/storage-blob': ^12.17.0
-      zod: '>=3.0.0'
     peerDependenciesMeta:
       '@aws-sdk/client-s3':
         optional: true
       '@aws-sdk/s3-request-presigner':
         optional: true
       '@azure/storage-blob':
-        optional: true
-      zod:
         optional: true
 
   '@edgestore/shared@0.8.0':
@@ -430,6 +432,10 @@ packages:
     peerDependenciesMeta:
       zod:
         optional: true
+
+  '@edgestore/shared@1.0.0':
+    resolution: {integrity: sha512-IDl+eoN+zsKg4QmqqMlh4cR6Tdg2cVw/vFHm+MnmmaooP7tQOFdhg6e2qg9LDB7FvGpE3TyMokz+32VIGwOrzg==}
+    engines: {node: '>=22.22.0'}
 
   '@emnapi/core@1.10.0':
     resolution: {integrity: sha512-yq6OkJ4p82CAfPl0u9mQebQHKPJkY7WrIuk205cTYnYe+k2Z8YBh11FrbRG/H6ihirqcacOgl2BIO8oyMQLeXw==}
@@ -2054,6 +2060,9 @@ packages:
   '@solana/web3.js@1.98.4':
     resolution: {integrity: sha512-vv9lfnvjUsRiq//+j5pBdXig0IQdtzA0BRZ3bXEP4KaIyF1CcaydWqgyzQgfZMNIsWNWmG+AUHwPy4AHOD6gpw==}
 
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
   '@swc/helpers@0.5.21':
     resolution: {integrity: sha512-jI/VAmtdjB/RnI8GTnokyX7Ug8c+g+ffD6QRLa6XQewtnGyukKkKSk3wLTM3b5cjt1jNh9x0jfVlagdN2gDKQg==}
 
@@ -2765,6 +2774,10 @@ packages:
   cookie@0.7.2:
     resolution: {integrity: sha512-yki5XnKuf750l50uGTllt6kKILY4nQ1eNIQatoXEByZ5dWgnKqbnqmTrBE5B4N7lrMJKQ2ytWMiTO2o0v6Ew/w==}
     engines: {node: '>= 0.6'}
+
+  cookie@2.0.1:
+    resolution: {integrity: sha512-yuToqVvRrj6pfDXREyQAAv8SkAEk/8GS3jQRTiUMm66TVtBYmqQeoEjL2Lmq8Rpo6271vH76InTChTitEAm65w==}
+    engines: {node: '>=22'}
 
   copy-to-clipboard@3.3.3:
     resolution: {integrity: sha512-2KV8NhB5JqC3ky0r9PMCAZKbUHSwtEo4CwCs0KXgruG43gX5PMqDEBbVU4OUzw2MuAWUfsuFmWvEKG5QRfSnJA==}
@@ -3562,6 +3575,9 @@ packages:
   jose@4.15.9:
     resolution: {integrity: sha512-1vUQX+IdDMVPj4k8kOxgUqlcK518yluMuGZwqlr44FS1ppZB/5GWh4rZG89erpOBOJjU/OBsnCVFfapsRz6nEA==}
 
+  jose@6.2.12:
+    resolution: {integrity: sha512-9NiFmJEex0sy2Dk58j2UGBSHgUs2ypF9eZSu4L6vjOX3Dp96Sw1F3uL+H+D1sx02jZZdzUT0HgvCy59CuvXcWw==}
+
   js-cookie@3.0.7:
     resolution: {integrity: sha512-z/wZZgDrkNV1eA0ULjM/F9/50Ya8fbzgKneSpoPsXSGd0KnpdtHfOZWK+GcwLk+EZbS4F9RBhU+K2RgzuDaItw==}
     engines: {node: '>=20'}
@@ -3940,6 +3956,12 @@ packages:
   open@7.4.2:
     resolution: {integrity: sha512-MVHddDVweXZF3awtlAS+6pgKLlm/JgxZ90+/NBurBoQctVOOB/zDdVjcyPzQ+0laDGbsWgrRkflI65sQeOgT9Q==}
     engines: {node: '>=8'}
+
+  openapi-fetch@0.17.0:
+    resolution: {integrity: sha512-PsbZR1wAPcG91eEthKhN+Zn92FMHxv+/faECIwjXdxfTODGSGegYv0sc1Olz+HYPvKOuoXfp+0pA2XVt2cI0Ig==}
+
+  openapi-typescript-helpers@0.1.0:
+    resolution: {integrity: sha512-OKTGPthhivLw/fHz6c3OPtg72vi86qaMlqbJuVJ23qOvQ+53uw1n7HdmkJFibloF7QEjDrDkzJiOJuockM/ljw==}
 
   optionator@0.9.4:
     resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
@@ -4978,6 +5000,9 @@ packages:
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
+  zod@4.3.5:
+    resolution: {integrity: sha512-k7Nwx6vuWx1IJ9Bjuf4Zt1PEllcwe7cls3VNzm4CQ1/hgtFUK2bRNG3rvnpPUhFjmqJKAKtjV576KnUkHocg/g==}
+
   zod@4.6.5:
     resolution: {integrity: sha512-v5l/aFXZQeai4awLbOpSoHecE9UiMrnfx75tEXLjNonXVARxQ5mOeipTjROUchszUNCqnE+hqAMujRsRHsut2Q==}
 
@@ -5473,20 +5498,22 @@ snapshots:
       uuid: 9.0.1
       zod: 4.6.5
 
-  '@edgestore/server@0.8.0(@aws-sdk/client-s3@3.1112.0)(@aws-sdk/s3-request-presigner@3.1112.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(zod@4.6.5)':
+  '@edgestore/sdk@1.0.0':
     dependencies:
-      '@edgestore/shared': 0.8.0(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(zod@4.6.5)
-      '@panva/hkdf': 1.2.1
-      cookie: 0.7.2
-      jose: 4.15.9
-      uuid: 9.0.1
+      openapi-fetch: 0.17.0
+      openapi-typescript-helpers: 0.1.0
+
+  '@edgestore/server@1.0.0(@aws-sdk/client-s3@3.1112.0)(@aws-sdk/s3-request-presigner@3.1112.0)':
+    dependencies:
+      '@edgestore/sdk': 1.0.0
+      '@edgestore/shared': 1.0.0
+      '@standard-schema/spec': 1.1.0
+      cookie: 2.0.1
+      jose: 6.2.12
+      zod: 4.3.5
     optionalDependencies:
       '@aws-sdk/client-s3': 3.1112.0
       '@aws-sdk/s3-request-presigner': 3.1112.0
-      zod: 4.6.5
-    transitivePeerDependencies:
-      - react
-      - react-dom
 
   '@edgestore/shared@0.8.0(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(zod@4.6.5)':
     dependencies:
@@ -5494,6 +5521,10 @@ snapshots:
       react-dom: 19.3.0(react@19.3.0)
     optionalDependencies:
       zod: 4.6.5
+
+  '@edgestore/shared@1.0.0':
+    dependencies:
+      '@standard-schema/spec': 1.1.0
 
   '@emnapi/core@1.10.0':
     dependencies:
@@ -7216,6 +7247,8 @@ snapshots:
       - typescript
       - utf-8-validate
 
+  '@standard-schema/spec@1.1.0': {}
+
   '@swc/helpers@0.5.21':
     dependencies:
       tslib: 2.8.1
@@ -7951,6 +7984,8 @@ snapshots:
       - utf-8-validate
 
   cookie@0.7.2: {}
+
+  cookie@2.0.1: {}
 
   copy-to-clipboard@3.3.3:
     dependencies:
@@ -8929,6 +8964,8 @@ snapshots:
 
   jose@4.15.9: {}
 
+  jose@6.2.12: {}
+
   js-cookie@3.0.7:
     optional: true
 
@@ -9383,6 +9420,12 @@ snapshots:
     dependencies:
       is-docker: 2.2.1
       is-wsl: 2.2.0
+
+  openapi-fetch@0.17.0:
+    dependencies:
+      openapi-typescript-helpers: 0.1.0
+
+  openapi-typescript-helpers@0.1.0: {}
 
   optionator@0.9.4:
     dependencies:
@@ -10533,6 +10576,8 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   zod@3.25.76: {}
+
+  zod@4.3.5: {}
 
   zod@4.6.5: {}
 
