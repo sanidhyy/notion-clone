@@ -243,7 +243,7 @@ Useful resources and dependencies that are used in Jotion.
 - [convex](https://www.npmjs.com/package/convex): ^1.46.0
 - [emoji-picker-react](https://www.npmjs.com/package/emoji-picker-react): ^4.22.3
 - [eslint](https://www.npmjs.com/package/eslint): ^8
-- [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 15.5.27
+- [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 15.5.28
 - [lucide-react](https://www.npmjs.com/package/lucide-react): ^1.52.0
 - [next](https://www.npmjs.com/package/next): 16.3.8
 - [next-themes](https://www.npmjs.com/package/next-themes): ^0.4.6
