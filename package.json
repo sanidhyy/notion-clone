@@ -13,7 +13,7 @@
     "@blocknote/core": "^0.55.0",
     "@blocknote/mantine": "^0.54.2",
     "@blocknote/react": "^0.54.2",
-    "@clerk/react": "^6.17.6",
+    "@clerk/react": "^6.17.8",
     "@clerk/ui": "^1.36.0",
     "@edgestore/react": "^1.0.0",
     "@edgestore/server": "^1.0.0",
