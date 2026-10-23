@@ -225,7 +225,7 @@ Useful resources and dependencies that are used in Jotion.
 - [@mantine/core](https://www.npmjs.com/package/@mantine/core): ^8.3.11
 - [@mantine/hooks](https://www.npmjs.com/package/@mantine/hooks): ^8.3.11
 - [@mantine/utils](https://www.npmjs.com/package/@mantine/utils): ^6.0.22
-- [@radix-ui/react-alert-dialog](https://www.npmjs.com/package/@radix-ui/react-alert-dialog): ^1.1.15
+- [@radix-ui/react-alert-dialog](https://www.npmjs.com/package/@radix-ui/react-alert-dialog): ^1.2.1
 - [@radix-ui/react-avatar](https://www.npmjs.com/package/@radix-ui/react-avatar): ^1.3.1
 - [@radix-ui/react-dialog](https://www.npmjs.com/package/@radix-ui/react-dialog): ^1.0.5
 - [@radix-ui/react-dropdown-menu](https://www.npmjs.com/package/@radix-ui/react-dropdown-menu): ^2.1.25
