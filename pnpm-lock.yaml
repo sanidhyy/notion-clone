@@ -27,8 +27,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       '@edgestore/server':
-        specifier: ^1.0.0
-        version: 1.0.0(@aws-sdk/client-s3@3.1112.0)(@aws-sdk/s3-request-presigner@3.1112.0)
+        specifier: ^1.0.1
+        version: 1.0.1(@aws-sdk/client-s3@3.1112.0)(@aws-sdk/s3-request-presigner@3.1112.0)
       '@mantine/core':
         specifier: ^8.3.11
         version: 8.3.18(@mantine/hooks@8.3.18(react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
@@ -416,12 +416,12 @@ packages:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
 
-  '@edgestore/sdk@1.0.0':
-    resolution: {integrity: sha512-eA8yoe/mBQBlautYA8W8iqgGiv1Iua45dwRMGAK4ZBKw3o7JrwQoT3f5wQ/I0NyTvbA56vUCtqZ19vb0Tod7Iw==}
+  '@edgestore/sdk@1.0.1':
+    resolution: {integrity: sha512-uX6bbzraytQbYbsz+Hr/BQYg4V79K9+trVqYvrunt7DNvniz8wGHoh+L8MM/0Q+IezC/Vfx8womwF4kOD+Ka8Q==}
     engines: {node: '>=22.22.0'}
 
-  '@edgestore/server@1.0.0':
-    resolution: {integrity: sha512-uSbqcLjID+1A877z0cYkAKmIosujKh1eFoOTz74x2x2i4UfdcC/Q/M0lvtRZfTxzCXX9MOFT8NYmvsrvus/AEg==}
+  '@edgestore/server@1.0.1':
+    resolution: {integrity: sha512-JO1lS9Wxt+NM8+f8Vd0hUTeT7Q8K+Z8aifgr+Q/i2k1bh6BE4mNXzXh07PQsgwfKRbqIztYCzxio3zIbTY7uGQ==}
     engines: {node: '>=22.22.0'}
     peerDependencies:
       '@aws-sdk/client-s3': '>=3.0.0'
@@ -437,6 +437,10 @@ packages:
 
   '@edgestore/shared@1.0.0':
     resolution: {integrity: sha512-IDl+eoN+zsKg4QmqqMlh4cR6Tdg2cVw/vFHm+MnmmaooP7tQOFdhg6e2qg9LDB7FvGpE3TyMokz+32VIGwOrzg==}
+    engines: {node: '>=22.22.0'}
+
+  '@edgestore/shared@1.0.1':
+    resolution: {integrity: sha512-YOl7NxgERkWCSgmhtn91MPpBSU/6KbKQycVIjRdGgOuWrWm+u23vTY5o8499NKgn/G/JGCSSRySDqKYNetxhtA==}
     engines: {node: '>=22.22.0'}
 
   '@emnapi/core@1.10.0':
@@ -3674,8 +3678,8 @@ packages:
     resolution: {integrity: sha512-/imKNG4EbWNrVjoNC/1H5/9GFy+tqjGBHCaSsN+P2RnPqjsLmv6UD3Ej+Kj8nBWaRAwyk7kK5ZUc+OEatnTR3A==}
     hasBin: true
 
-  jose@6.2.12:
-    resolution: {integrity: sha512-9NiFmJEex0sy2Dk58j2UGBSHgUs2ypF9eZSu4L6vjOX3Dp96Sw1F3uL+H+D1sx02jZZdzUT0HgvCy59CuvXcWw==}
+  jose@6.2.13:
+    resolution: {integrity: sha512-7TIg10ZE1x82YediN+lcrPNvGMKge9yFHQD+Qho/b8y2adfugU3AsvvHfxV0fzyFllT6l9xCjf4RWY9g/Z9PJQ==}
 
   js-cookie@3.0.7:
     resolution: {integrity: sha512-z/wZZgDrkNV1eA0ULjM/F9/50Ya8fbzgKneSpoPsXSGd0KnpdtHfOZWK+GcwLk+EZbS4F9RBhU+K2RgzuDaItw==}
@@ -5614,24 +5618,28 @@ snapshots:
       react: 19.3.0
       react-dom: 19.3.0(react@19.3.0)
 
-  '@edgestore/sdk@1.0.0':
+  '@edgestore/sdk@1.0.1':
     dependencies:
       openapi-fetch: 0.17.0
       openapi-typescript-helpers: 0.1.0
 
-  '@edgestore/server@1.0.0(@aws-sdk/client-s3@3.1112.0)(@aws-sdk/s3-request-presigner@3.1112.0)':
+  '@edgestore/server@1.0.1(@aws-sdk/client-s3@3.1112.0)(@aws-sdk/s3-request-presigner@3.1112.0)':
     dependencies:
-      '@edgestore/sdk': 1.0.0
-      '@edgestore/shared': 1.0.0
+      '@edgestore/sdk': 1.0.1
+      '@edgestore/shared': 1.0.1
       '@standard-schema/spec': 1.1.0
       cookie: 2.0.1
-      jose: 6.2.12
+      jose: 6.2.13
       zod: 4.3.5
     optionalDependencies:
       '@aws-sdk/client-s3': 3.1112.0
       '@aws-sdk/s3-request-presigner': 3.1112.0
 
   '@edgestore/shared@1.0.0':
+    dependencies:
+      '@standard-schema/spec': 1.1.0
+
+  '@edgestore/shared@1.0.1':
     dependencies:
       '@standard-schema/spec': 1.1.0
 
@@ -9173,7 +9181,7 @@ snapshots:
 
   jiti@1.21.7: {}
 
-  jose@6.2.12: {}
+  jose@6.2.13: {}
 
   js-cookie@3.0.7:
     optional: true
