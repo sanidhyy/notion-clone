@@ -248,7 +248,7 @@ Useful resources and dependencies that are used in Jotion.
 - [next](https://www.npmjs.com/package/next): 16.4.1
 - [next-themes](https://www.npmjs.com/package/next-themes): ^0.4.6
 - [postcss](https://www.npmjs.com/package/postcss): ^8
-- [react](https://www.npmjs.com/package/react): ^19.3.0
+- [react](https://www.npmjs.com/package/react): ^19.3.1
 - [react-dom](https://www.npmjs.com/package/react-dom): ^19.3.0
 - [react-dropzone](https://www.npmjs.com/package/react-dropzone): ^20.1.1
 - [react-textarea-autosize](https://www.npmjs.com/package/react-textarea-autosize): ^8.5.9
