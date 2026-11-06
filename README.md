@@ -235,12 +235,12 @@ Useful resources and dependencies that are used in Jotion.
 - [@types/node](https://www.npmjs.com/package/@types/node): ^26.6.5
 - [@types/react](https://www.npmjs.com/package/@types/react): ^19
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19
-- [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.7.0
-- [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.4.24
+- [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.14.1
+- [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.6.2
 - [class-variance-authority](https://www.npmjs.com/package/class-variance-authority): ^0.7.1
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.1
 - [cmdk](https://www.npmjs.com/package/cmdk): ^1.1.1
-- [convex](https://www.npmjs.com/package/convex): ^1.46.0
+- [convex](https://www.npmjs.com/package/convex): ^1.49.0
 - [emoji-picker-react](https://www.npmjs.com/package/emoji-picker-react): ^4.22.3
 - [eslint](https://www.npmjs.com/package/eslint): ^8
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 15.5.28
