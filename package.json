@@ -51,7 +51,7 @@
     "@types/node": "^26.6.5",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "autoprefixer": "^10.4.24",
+    "autoprefixer": "^10.6.2",
     "eslint": "^8",
     "eslint-config-next": "15.5.28",
     "postcss": "^8",
