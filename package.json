@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@blocknote/core": "^0.56.0",
+    "@blocknote/core": "^0.57.0",
     "@blocknote/mantine": "^0.56.0",
     "@blocknote/react": "^0.56.0",
     "@clerk/react": "^6.18.2",
