@@ -92,6 +92,7 @@ notion-clone/
   |- .eslintrc.json
   |- .gitignore
   |- components.json
+  |- convex.json
   |- css.d.ts
   |- environment.d.ts
   |- next.config.js
@@ -101,7 +102,6 @@ notion-clone/
   |- postcss.config.js
   |- tailwind.config.ts
   |- tsconfig.json
-  |- vercel.sh
   |- vercel.ts
 ```
 <!--- FOLDER_STRUCTURE_END --->
@@ -245,6 +245,7 @@ Useful resources and dependencies that are used in Jotion.
 - [eslint](https://www.npmjs.com/package/eslint): ^8
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 15.5.28
 - [lucide-react](https://www.npmjs.com/package/lucide-react): ^1.52.0
+- [mprocs](https://www.npmjs.com/package/mprocs): ^0.9.6
 - [next](https://www.npmjs.com/package/next): 16.4.1
 - [next-themes](https://www.npmjs.com/package/next-themes): ^0.4.6
 - [postcss](https://www.npmjs.com/package/postcss): ^8
