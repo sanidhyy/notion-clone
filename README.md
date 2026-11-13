@@ -260,7 +260,7 @@ Useful resources and dependencies that are used in Jotion.
 - [typescript](https://www.npmjs.com/package/typescript): ^6.0.3
 - [usehooks-ts](https://www.npmjs.com/package/usehooks-ts): ^3.1.1
 - [zod](https://www.npmjs.com/package/zod): ^4.6.5
-- [zustand](https://www.npmjs.com/package/zustand): ^5.0.15
+- [zustand](https://www.npmjs.com/package/zustand): ^5.1.0
 
 <!--- DEPENDENCIES_END --->
 
