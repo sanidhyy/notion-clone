@@ -24,8 +24,8 @@ importers:
         specifier: ^1.42.4
         version: 1.42.4(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(supports-color@7.2.0)
       '@edgestore/react':
-        specifier: ^1.0.0
-        version: 1.0.0(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+        specifier: ^1.0.1
+        version: 1.0.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       '@edgestore/server':
         specifier: ^1.0.1
         version: 1.0.1(@aws-sdk/client-s3@3.1112.0)(@aws-sdk/s3-request-presigner@3.1112.0)
@@ -378,8 +378,8 @@ packages:
       react: ^18.0.0 || ~19.0.3 || ~19.1.4 || ~19.2.3 || ~19.3.0-0
       react-dom: ^18.0.0 || ~19.0.3 || ~19.1.4 || ~19.2.3 || ~19.3.0-0
 
-  '@edgestore/react@1.0.0':
-    resolution: {integrity: sha512-ZGX0UPJredcCwRDwE7/Qr3ffK/zpOX+VIfmaUbDVfu7/w3eN17WmDsA8KTchmijCGeEMhunVo9OXQTB5I6O8Cw==}
+  '@edgestore/react@1.0.1':
+    resolution: {integrity: sha512-XC/gD2WBceciNsAaIB4Ou9TH2ZGcbvhkBiEV/BAzGGlqo5tClyHenI5RIp04z3oyK5wwjSzVV61xZon4g0QpIA==}
     engines: {node: '>=22.22.0'}
     peerDependencies:
       react: '>=16.8.0'
@@ -403,10 +403,6 @@ packages:
         optional: true
       '@azure/storage-blob':
         optional: true
-
-  '@edgestore/shared@1.0.0':
-    resolution: {integrity: sha512-IDl+eoN+zsKg4QmqqMlh4cR6Tdg2cVw/vFHm+MnmmaooP7tQOFdhg6e2qg9LDB7FvGpE3TyMokz+32VIGwOrzg==}
-    engines: {node: '>=22.22.0'}
 
   '@edgestore/shared@1.0.1':
     resolution: {integrity: sha512-YOl7NxgERkWCSgmhtn91MPpBSU/6KbKQycVIjRdGgOuWrWm+u23vTY5o8499NKgn/G/JGCSSRySDqKYNetxhtA==}
@@ -4034,9 +4030,9 @@ snapshots:
       - '@types/react'
       - supports-color
 
-  '@edgestore/react@1.0.0(react-dom@19.3.1(react@19.3.1))(react@19.3.1)':
+  '@edgestore/react@1.0.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)':
     dependencies:
-      '@edgestore/shared': 1.0.0
+      '@edgestore/shared': 1.0.1
       react: 19.3.1
       react-dom: 19.3.1(react@19.3.1)
 
@@ -4056,10 +4052,6 @@ snapshots:
     optionalDependencies:
       '@aws-sdk/client-s3': 3.1112.0
       '@aws-sdk/s3-request-presigner': 3.1112.0
-
-  '@edgestore/shared@1.0.0':
-    dependencies:
-      '@standard-schema/spec': 1.1.0
 
   '@edgestore/shared@1.0.1':
     dependencies:
