@@ -232,7 +232,7 @@ Useful resources and dependencies that are used in Jotion.
 - [@radix-ui/react-label](https://www.npmjs.com/package/@radix-ui/react-label): ^2.1.17
 - [@radix-ui/react-popover](https://www.npmjs.com/package/@radix-ui/react-popover): ^1.3.1
 - [@radix-ui/react-slot](https://www.npmjs.com/package/@radix-ui/react-slot): ^1.5.0
-- [@types/node](https://www.npmjs.com/package/@types/node): ^26.6.5
+- [@types/node](https://www.npmjs.com/package/@types/node): ^26.6.6
 - [@types/react](https://www.npmjs.com/package/@types/react): ^19
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19
 - [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.14.1
@@ -240,11 +240,11 @@ Useful resources and dependencies that are used in Jotion.
 - [class-variance-authority](https://www.npmjs.com/package/class-variance-authority): ^0.7.1
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.1
 - [cmdk](https://www.npmjs.com/package/cmdk): ^1.1.1
-- [convex](https://www.npmjs.com/package/convex): ^1.49.0
+- [convex](https://www.npmjs.com/package/convex): ^1.50.0
 - [emoji-picker-react](https://www.npmjs.com/package/emoji-picker-react): ^5.1.4
 - [eslint](https://www.npmjs.com/package/eslint): ^8
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 15.5.28
-- [lucide-react](https://www.npmjs.com/package/lucide-react): ^1.52.0
+- [lucide-react](https://www.npmjs.com/package/lucide-react): ^1.73.0
 - [mprocs](https://www.npmjs.com/package/mprocs): ^0.9.6
 - [next](https://www.npmjs.com/package/next): 16.4.5
 - [next-themes](https://www.npmjs.com/package/next-themes): ^0.4.6
