@@ -246,7 +246,7 @@ Useful resources and dependencies that are used in Jotion.
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 15.5.28
 - [lucide-react](https://www.npmjs.com/package/lucide-react): ^1.73.0
 - [mprocs](https://www.npmjs.com/package/mprocs): ^0.9.6
-- [next](https://www.npmjs.com/package/next): 16.4.5
+- [next](https://www.npmjs.com/package/next): 16.4.6
 - [next-themes](https://www.npmjs.com/package/next-themes): ^0.4.6
 - [postcss](https://www.npmjs.com/package/postcss): ^8
 - [react](https://www.npmjs.com/package/react): ^19.3.1
